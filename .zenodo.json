@@ -1,0 +1,28 @@
+{
+  "upload_type": "software",
+  "title": "Calibrated Committee",
+  "version": "0.1.0",
+  "description": "Synthetic toy simulation (classical software, not physical holography hardware), follow-up to membrane-committee. Per noise level, per-member vote weights for a heterogeneous committee of holographic membranes are fit by multiclass logistic regression on 200 labelled calibration trials, frozen, and evaluated on fresh seeds with structural calibrate/evaluate separation. Negative result: at sigma=0.25 the best member's learned weight exceeds the sum of the others, so stacking equals select-best (0.895 vs 0.895; oracle 0.980); at sigma=0.50 stacking reaches 0.670 vs 0.665 for select-best (oracle 0.865). A 20-parameter stacking does no better. The oracle gap is not closed by linear aggregation of votes.",
+  "creators": [
+    {
+      "name": "Lee, Mun Seok"
+    }
+  ],
+  "license": "AGPL-3.0-only",
+  "keywords": [
+    "holographic-memory",
+    "ensemble",
+    "stacking",
+    "calibration",
+    "negative-result",
+    "reproducible-research"
+  ],
+  "notes": "Synthetic toy simulation; classical software with a classical negative result. Not physical holography or quantum hardware.",
+  "related_identifiers": [
+    {
+      "identifier": "https://github.com/sparkainlp-x/membrane-committee",
+      "relation": "isContinuationOf",
+      "resource_type": "software"
+    }
+  ]
+}

@@ -1,0 +1,29 @@
+name: Tests
+
+on:
+  push:
+  pull_request:
+
+permissions:
+  contents: read
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+      matrix:
+        python-version: ["3.10", "3.11", "3.12", "3.13"]
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: ${{ matrix.python-version }}
+      - name: Tests
+        run: python -W error tests.py
+      - name: Demo (and check the numbers quoted in README.md)
+        run: |
+          python -W error demo.py | tee demo.txt
+          grep -Fq "weights=[2.277, 0.505, 0.384, 0.396, 0.287]" demo.txt
+          grep -Eq "^ +0\.25 +0\.895 +0\.885 +0\.895 +0\.895 +0\.895 +0\.980$" demo.txt
+          grep -Eq "^ +0\.50 +0\.670 +0\.605 +0\.665 +0\.665 +0\.645 +0\.865$" demo.txt

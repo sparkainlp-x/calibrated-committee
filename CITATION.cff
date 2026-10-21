@@ -1,0 +1,25 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite it as below."
+title: Calibrated Committee
+version: 0.1.0
+date-released: 2026-10-21
+authors:
+  - family-names: Lee
+    given-names: Mun Seok
+license: AGPL-3.0-only
+repository-code: https://github.com/sparkainlp-x/calibrated-committee
+abstract: >-
+  Learned aggregation for a heterogeneous committee of holographic
+  membranes: per-member vote weights fit by multiclass logistic
+  regression on calibration trials, frozen, evaluated on fresh
+  seeds with structural calibrate/evaluate separation. A deepened
+  negative result: the fit learns a dictatorship of the best
+  member, a richer 20-parameter stacking does no better, and the
+  oracle gap stands -- the oracle information is not in the votes
+  in any linearly extractable form.
+keywords:
+  - holographic-memory
+  - ensemble
+  - stacking
+  - calibration
+  - negative-result

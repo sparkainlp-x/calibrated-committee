@@ -51,3 +51,7 @@ Toy scale; linear vote aggregation only (probe-conditional or
 margin-based aggregation is the named next experiment, untested);
 calibration costs 200 labeled trials per σ; the oracle peeks at
 the label. Full account in `DESIGN.md`.
+
+## Acknowledgements
+
+Thanks to Mun Seok Lee for contributions to this project.

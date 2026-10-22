@@ -5,7 +5,9 @@
   "description": "Synthetic toy simulation (classical software, not physical holography hardware), follow-up to membrane-committee. Per noise level, per-member vote weights for a heterogeneous committee of holographic membranes are fit by multiclass logistic regression on 200 labelled calibration trials, frozen, and evaluated on fresh seeds with structural calibrate/evaluate separation. Negative result: at sigma=0.25 the best member's learned weight exceeds the sum of the others, so stacking equals select-best (0.895 vs 0.895; oracle 0.980); at sigma=0.50 stacking reaches 0.670 vs 0.665 for select-best (oracle 0.865). A 20-parameter stacking does no better. The oracle gap is not closed by linear aggregation of votes.",
   "creators": [
     {
-      "name": "Lee, Mun Seok"
+      "name": "Brisson, Jean-François",
+      "affiliation": "Spark AI NLP",
+      "orcid": "0009-0000-9778-5374"
     }
   ],
   "license": "AGPL-3.0-only",

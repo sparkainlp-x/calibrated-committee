@@ -54,4 +54,4 @@ the label. Full account in `DESIGN.md`.
 
 ## Acknowledgements
 
-Thanks to Mun Seok Lee for contributions to this project.
+Mun Seok Lee is acknowledged for discussion only. We cannot verify any specific contribution to this repository, and no file here is known to derive from a package received under his name. He is not an author of this release, and no endorsement of this code or its conclusions is implied. This repository follows up [membrane-committee](https://github.com/sparkainlp-x/membrane-committee); its helper functions (`normalize`, `overlap`, `noisy`, `merge_qubit`, `Member._view`) match those in that repository's original `hcommittee.py`, which was committed before the received package there was added.

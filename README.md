@@ -21,7 +21,7 @@ reliability-weighted voting do not beat the best single member.
 Synthetic toy simulation: classical software, not physical
 holography or quantum hardware.
 
-## Verified
+## Measured in this repo (SYNTHETIC, seeded)
 
 - σ=0.25: stacked 0.895 = select-best 0.895; oracle 0.980 untouched
 - σ=0.50: stacked 0.670 ≈ select-best 0.665; oracle 0.865 untouched
@@ -34,6 +34,8 @@ holography or quantum hardware.
 - Seed separation enforced and tested both directions; weights
   frozen (identical across runs)
 - 8/8 tests pass, incl. the normalization regression test
+
+**Uncertainty (arithmetic on the counts above, no new runs).** Each accuracy is one frozen-weight evaluation on 200 test trials from one seed range, so there is no spread across seeds. Wilson 95% intervals, treating trials as independent: σ=0.25 stacked and select-best 179/200 = 0.895 (0.845–0.930), oracle 196/200 = 0.980 (0.950–0.992); σ=0.50 stacked 134/200 = 0.670 (0.602–0.731), select-best 133/200 = 0.665 (0.597–0.727), oracle 173/200 = 0.865 (0.811–0.906). The stacked-minus-select-best differences (0.000 and 0.005, one trial) are far inside this sampling noise, so the supported statement is "no measurable gain", not "stacking is slightly better". Variation across calibration sets and seeds is not measured here and would need new runs.
 
 ## Run it
 
